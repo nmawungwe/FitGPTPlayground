@@ -5,15 +5,14 @@ function Home() {
   return (
     <Page className="flex flex-col gap-12">
       <section className="flex flex-col gap-6">
-        <Text variant="h1">OpenAI GPT-3 text model usage example</Text>
+        <Text variant="h1">Welcome to FitGPT</Text>
         <Text className="text-zinc-600">
-          In this example, a simple chat bot is implemented using Next.js, API
-          Routes, and OpenAI API.
+          Lets get healthier together! FitGPT is a AI powered chat bot that can help you with your fitness goals.
         </Text>
       </section>
 
       <section className="flex flex-col gap-3">
-        <Text variant="h2">AI Chat Bot:</Text>
+        <Text variant="h2">FitGPT Chat Bot:</Text>
         <div className="lg:w-2/3">
           <Chat />
         </div>
@@ -22,6 +21,9 @@ function Home() {
   )
 }
 
-Home.Layout = Layout
+//This shows how to use the Layout component and i commented it out because it 
+// doesn't suit the design of the page
+
+// Home.Layout = Layout
 
 export default Home

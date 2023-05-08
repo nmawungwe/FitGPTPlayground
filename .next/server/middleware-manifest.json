@@ -4,12 +4,12 @@
   "functions": {
     "/api/chat": {
       "env": [
+        "__NEXT_TEST_MAX_ISR_CACHE",
         "OPENAI_API_KEY",
         "AI_TEMP",
         "AI_MAX_TOKENS",
-        "__NEXT_TEST_MAX_ISR_CACHE",
-        "OPENAI_API_ORG",
-        "NEXT_PRIVATE_DEBUG_CACHE"
+        "NEXT_PRIVATE_DEBUG_CACHE",
+        "OPENAI_API_ORG"
       ],
       "files": [
         "server/edge-runtime-webpack.js",
