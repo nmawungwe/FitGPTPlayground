@@ -41,7 +41,7 @@ const handler = async (req: Request): Promise<Response> => {
   const payload: OpenAIStreamPayload = {
     model: 'gpt-3.5-turbo',
     messages: messages,
-    temperature: process.env.AI_TEMP ? parseFloat(process.env.AI_TEMP) : 0.7,
+    temperature: process.env.AI_TEMP ? parseFloat(process.env.AI_TEMP) : 0,
     max_tokens: process.env.AI_MAX_TOKENS
       ? parseInt(process.env.AI_MAX_TOKENS) // I am going to specify this in the .env file so far I hard coded it to 1000
       : 100,
